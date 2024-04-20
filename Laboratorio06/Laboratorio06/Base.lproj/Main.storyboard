@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Laboratorio06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5Mm-f2-zUn">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="469" id="y8c-gi-mbV" customClass="PokemonTableViewCell" customModule="Laboratorio06" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="469"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y8c-gi-mbV" id="Dyx-pc-yZh">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="469"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="1go-dY-Cja">
+                                                    <rect key="frame" x="40" y="31" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="apa-Vk-145"/>
+                                                        <constraint firstAttribute="height" constant="40" id="oAc-Hk-CdM"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David93" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ha-VJ-JXV">
+                                                    <rect key="frame" x="95" y="31" width="258" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="torchic" translatesAutoresizingMaskIntoConstraints="NO" id="z8H-d1-Dgl">
+                                                    <rect key="frame" x="20" y="91" width="353" height="350"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="350" id="XfK-R8-1jN"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1go-dY-Cja" firstAttribute="top" secondItem="Dyx-pc-yZh" secondAttribute="topMargin" constant="20" id="2w3-hI-cR7"/>
+                                                <constraint firstItem="1go-dY-Cja" firstAttribute="leading" secondItem="Dyx-pc-yZh" secondAttribute="leadingMargin" constant="20" id="7KG-OI-DwV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="z8H-d1-Dgl" secondAttribute="trailing" id="GPm-RM-Mss"/>
+                                                <constraint firstItem="5ha-VJ-JXV" firstAttribute="top" secondItem="Dyx-pc-yZh" secondAttribute="topMargin" constant="20" id="McU-pt-snh"/>
+                                                <constraint firstItem="z8H-d1-Dgl" firstAttribute="top" secondItem="1go-dY-Cja" secondAttribute="bottom" constant="20" id="QWn-nT-Jyk"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="5ha-VJ-JXV" secondAttribute="trailing" constant="20" id="TQQ-LL-msD"/>
+                                                <constraint firstItem="5ha-VJ-JXV" firstAttribute="leading" secondItem="1go-dY-Cja" secondAttribute="trailing" constant="15" id="kkJ-z7-DHX"/>
+                                                <constraint firstAttribute="bottom" secondItem="z8H-d1-Dgl" secondAttribute="bottom" constant="28" id="nhK-Jb-8ld"/>
+                                                <constraint firstItem="z8H-d1-Dgl" firstAttribute="leading" secondItem="Dyx-pc-yZh" secondAttribute="leadingMargin" id="qRK-Cq-A1x"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgPost" destination="z8H-d1-Dgl" id="dd7-RL-YHN"/>
+                                            <outlet property="imgProfile" destination="1go-dY-Cja" id="Lvj-lI-cSS"/>
+                                            <outlet property="username" destination="5ha-VJ-JXV" id="QwY-Ri-nfV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Mm-f2-zUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AUj-ja-R29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Mm-f2-zUn" secondAttribute="trailing" id="FaF-tJ-9dn"/>
+                            <constraint firstItem="5Mm-f2-zUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Sf7-pa-PRm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5Mm-f2-zUn" secondAttribute="bottom" id="omI-5l-Fpb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="5Mm-f2-zUn" id="1D3-MG-hyI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2160" y="58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pikachu" width="256" height="256"/>
+        <image name="torchic" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
